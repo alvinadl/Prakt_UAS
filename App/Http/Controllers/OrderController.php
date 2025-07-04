@@ -42,7 +42,7 @@ class OrderController extends Controller
             'status' => 'proses' // default status baru
         ]);
 
-        return redirect()->route('orders.index')->with('success', 'Order berhasil ditambahkan!');
+        return redirect()->route('orders.index')->with('success', 'Order ditambahkan!');
     }
 
     public function show(Order $order)
